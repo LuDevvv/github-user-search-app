@@ -3,13 +3,12 @@ import './App.css';
 import { useFindUser } from './hooks/useFindUser';
 
 function App() {
-  const [query, setQuery] = useState('midudev');
+  const [query, setQuery] = useState('ludevvv');
   const { user, loading, error } = useFindUser({ query });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.input.value);
-    // setQuery(e.target.input.value);
+    setQuery(e.target.input.value.trim());
   };
 
   return (

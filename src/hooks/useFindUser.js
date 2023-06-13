@@ -5,14 +5,18 @@ export const useFindUser = ({ query }) => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(null);
 
+  console.log({
+    user,
+    error,
+    loading,
+  });
+
   useEffect(() => {
     const searchUsearApi = async () => {
       try {
         setLoading(true);
         const res = await fetch(`https://api.github.com/users/${query}`);
         const user = await res.json();
-
-        console.log(user);
 
         const mappedApi = {
           id: user.id,
