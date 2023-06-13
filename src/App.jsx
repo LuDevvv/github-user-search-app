@@ -4,19 +4,26 @@ import { useFindUser } from './hooks/useFindUser';
 
 function App() {
   const [query, setQuery] = useState('midudev');
-  const { user } = useFindUser({ query });
+  const { user, loading, error } = useFindUser({ query });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
-    setQuery(e);
+    console.log(e.target.input.value);
+    // setQuery(e.target.input.value);
   };
+
   return (
     <div className="App">
-      <h1>Github Finder 🔎</h1>
+      <h2>GitFinder 🔎</h2>
       <form className="form" onSubmit={handleSubmit}>
-        <input type="text" placeholder="Search Github username..." />
-        <button type="submit">Search</button>
+        <input
+          type="text"
+          placeholder="Search Github username..."
+          name="input"
+        />
+        <button type="submit" className="button">
+          Search
+        </button>
       </form>
 
       {user.map(
@@ -40,7 +47,7 @@ function App() {
               <div className="flex-ct">
                 <div className="left-ct">
                   <h1>{name}</h1>
-                  <b>@{username}</b>
+                  <b className="username">@{username}</b>
                 </div>
 
                 <div className="rihgt-ct">
@@ -49,12 +56,21 @@ function App() {
               </div>
 
               <div className="personal-info">
-                <span>{email ? `✉️ ${email}` : null}</span>
-                <span>{location ? `📍 ${location}` : null}</span>
-                <span>{company ? ` 🏢 ${company}` : null}</span>
+                <span>📅 {account_date}</span>
+                <span>✉️ {email ? email : 'This profile has no email'}</span>
+                <span>
+                  📍 {location ? location : 'This profile has no location'}
+                </span>
+                <span>
+                  🏢 {company ? company : 'This profile has no company'}
+                </span>
+                <span>
+                  {username === 'defunkt' ? '⭐ Github Founder' : null}
+                </span>
               </div>
 
-              <div className="">{bio}</div>
+              <div className="bio">{bio ? bio : null}</div>
+
               <section className="github-info">
                 <div className="github-info-card">
                   <b>Followers</b>
@@ -75,9 +91,9 @@ function App() {
               </section>
 
               <a
-                className="link-to-profile"
+                className="link-to-profile button"
                 href={profile_url}
-                rel="noreferrer"
+                target="_blank"
               >
                 🔗 Link to profile
               </a>
