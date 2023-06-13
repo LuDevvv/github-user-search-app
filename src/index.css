@@ -101,7 +101,6 @@ body {
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji',
     sans-serif;
-  line-height: 1.4;
   max-width: 800px;
   margin: 20px auto;
   padding: 0 10px;
@@ -111,6 +110,7 @@ body {
   background: #fff;
   background: var(--background-body);
   text-rendering: optimizeLegibility;
+  background-color: #0076d1;
 }
 
 @media (prefers-color-scheme: dark) {
