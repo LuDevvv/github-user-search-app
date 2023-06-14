@@ -1,17 +1,18 @@
+// import { useRef } from 'react';
 import { useEffect, useState } from 'react';
 
 export const useFindUser = ({ query }) => {
   const [user, setUser] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(null);
-
-  console.log({
-    user,
-    error,
-    loading,
-  });
+  // const inputRef = useRef(query);
 
   useEffect(() => {
+    // if (inputRef === query) {
+    //   console.log('es igual');
+    //   return;
+    // }
+
     const searchUsearApi = async () => {
       try {
         setLoading(true);
@@ -44,6 +45,5 @@ export const useFindUser = ({ query }) => {
     };
     searchUsearApi();
   }, [query]);
-
   return { user, loading, error };
 };
