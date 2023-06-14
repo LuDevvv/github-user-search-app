@@ -13,7 +13,12 @@ function App() {
 
   return (
     <div className="App">
-      <h2>GitFinder 🔎</h2>
+      <header className="header">
+        <h2>GitFinder 🔎</h2>
+        {/* <h4>DARK 🌙</h4> */}
+        <h4>LIGHT ☀️</h4>
+      </header>
+
       <Form handleSubmit={handleSubmit} />
       <UserCard query={query} />
     </div>

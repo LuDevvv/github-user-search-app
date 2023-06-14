@@ -97,10 +97,10 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji',
-    sans-serif;
+  font-family: 'Space Grotesk', 'DM Sans', 'Inter', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji',
+    'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   max-width: 800px;
   margin: 20px auto;
   padding: 0 10px;
@@ -735,18 +735,6 @@ select[multiple] {
   padding-right: 10px;
   background-image: none;
   overflow-y: auto;
-}
-
-input:focus {
-  box-shadow: 0 0 0 2px #0096bfab;
-  box-shadow: 0 0 0 2px var(--focus);
-}
-
-@media (prefers-color-scheme: dark) {
-  input:focus {
-    box-shadow: 0 0 0 2px #0096bfab;
-    box-shadow: 0 0 0 2px var(--focus);
-  }
 }
 
 select:focus {
@@ -1582,8 +1570,4 @@ body > footer {
 
 body {
   background-color: #12192b;
-}
-
-input {
-  background-color: #1f2a48;
 }
