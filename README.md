@@ -5,19 +5,8 @@ Technologies: HTML, CSS, JavaScript, React.js, Node.js, Express.js, GitHub API.
 
 Screenshots 📷
 
-
-
 <img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
 
-<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/a530c65e-652f-4b18-8742-2e8a3e21c4c2" alt="Image" width="600" height="600">
 
-<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
-
-<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
-
-
-![image]()
-
-![image](https://github.com/LuDevvv/github-user-search-app/assets/107328372/a530c65e-652f-4b18-8742-2e8a3e21c4c2)
-
-![image](https://github.com/LuDevvv/github-user-search-app/assets/107328372/d4f6ed3c-6d0c-4bff-b761-fdf6f99389f3)
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/d4f6ed3c-6d0c-4bff-b761-fdf6f99389f3" alt="Image" width="600" height="600">
