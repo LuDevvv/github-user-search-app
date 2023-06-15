@@ -7,7 +7,7 @@ Screenshots 📷
 
 
 
-<img src="[path/to/image.jpg](https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014)" alt="Image" width="300" height="200">
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="300" height="200">
 
 ![image](https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014)
 
