@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { searchUser } from '../services/searchUser';
 
 export const useFindUser = ({ query }) => {
@@ -8,6 +8,12 @@ export const useFindUser = ({ query }) => {
 
   useEffect(() => {
     if (query === '') return;
+
+    // if (user.length <= 0) {
+    //   setError(`could not find user ${query}`);
+    //   console.log(`could not find user ${query}`);
+    //   return;
+    // }
 
     const searchUsearApi = async () => {
       try {
