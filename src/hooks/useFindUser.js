@@ -1,43 +1,21 @@
-// import { useRef } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { searchUser } from '../services/searchUser';
 
 export const useFindUser = ({ query }) => {
   const [user, setUser] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(null);
-  // const inputRef = useRef(query);
+  const inputRef = useRef(query);
 
   useEffect(() => {
-    // if (inputRef === query) {
-    //   console.log('es igual');
-    //   return;
-    // }
+    if (inputRef === query || query === '') return;
 
     const searchUsearApi = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`https://api.github.com/users/${query}`);
-        const user = await res.json();
-
-        const mappedApi = {
-          id: user.id,
-          username: user.login,
-          name: user.name,
-          avatar: user.avatar_url,
-          bio: user.bio,
-          company: user.company,
-          email: user.email,
-          followers: user.followers,
-          following: user.following,
-          location: user.location,
-          account_date: `${new Date(user.created_at).getFullYear()}-${
-            new Date(user.created_at).getMonth() + 1
-          }-${new Date(user.created_at).getDate()}`,
-          repos: user.public_repos,
-          profile_url: user.html_url,
-        };
-
-        setUser([mappedApi]);
+        const user = await searchUser({ query });
+        console.log(user);
+        setUser(user);
         setLoading(false);
       } catch (e) {
         setError(e);
