@@ -7,9 +7,16 @@ Screenshots 📷
 
 
 
-<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="500" height="500">
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
 
-![image](https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014)
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
+
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
+
+<img src="https://github.com/LuDevvv/github-user-search-app/assets/107328372/0c659491-64d3-4707-9595-220446326014" alt="Image" width="600" height="600">
+
+
+![image]()
 
 ![image](https://github.com/LuDevvv/github-user-search-app/assets/107328372/a530c65e-652f-4b18-8742-2e8a3e21c4c2)
 
